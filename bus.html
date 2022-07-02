@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bus Seat Booking</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url('./coach-3206326.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 40%;
+        background: webkit-transform rotate(120deg);
+        background: moz-transform rotate(120deg);
+      }
+      </style>
+    <div class="bus-container">
+      <label>Pick a bus:</label>
+      <select id="bus">
+        <option>Select</option>
+        <option value="1000">Normal: KES 1000</option>
+        <option value="800">Business: KES 800</option>
+        <option value="1500">First class: KES 1500</option>
+      </select>
+    </div>
+    <marquee hspace = "20">Welcome to <b> <i>UpBus</i> </b>  Services!!</marquee>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="row">
+        <div class="seat">45</div>
+        <div class="seat">41</div>
+        <div class="seat">37</div>
+        <div class="seat">33</div>
+        <div class="seat">29</div>
+        <div class="seat">25</div>
+        <div class="seat">21</div>
+        <div class="seat">17</div>
+        <div class="seat">13</div>
+        <div class="seat">9</div>
+        <div class="seat">5</div>
+        <div class="seat">1</div>
+      </div>
+
+      <div class="row">
+        <div class="seat">46</div>
+        <div class="seat">42</div>
+        <div class="seat">38</div>
+        <div class="seat occupied">34</div>
+        <div class="seat occupied">30</div>
+        <div class="seat">26</div>
+        <div class="seat">22</div>
+        <div class="seat">18</div>
+        <div class="seat">14</div>
+        <div class="seat">10</div>
+        <div class="seat">6</div>
+        <div class="seat">2</div>
+      </div>
+
+      <div class="row">
+        <div class="seat">47</div>
+      </div>
+
+      <div class="row">
+        <div class="seat">48</div>
+        <div class="seat">43</div>
+        <div class="seat">39</div>
+        <div class="seat">35</div>
+        <div class="seat">31</div>
+        <div class="seat">27</div>
+        <div class="seat">23</div>
+        <div class="seat">19</div>
+        <div class="seat">15</div>
+        <div class="seat">11</div>
+        <div class="seat">7</div>
+        <div class="seat">3</div>
+      </div>
+
+      <div class="row">
+        <div class="seat">49</div>
+        <div class="seat">44</div>
+        <div class="seat">40</div>
+        <div class="seat occupied">36</div>
+        <div class="seat occupied">32</div>
+        <div class="seat">28</div>
+        <div class="seat">24</div>
+        <div class="seat">20</div>
+        <div class="seat">16</div>
+        <div class="seat">12</div>
+        <div class="seat">8</div>
+        <div class="seat" id="button">4</div>
+        <img src="./driver.png" alt="driver">
+      </div>
+
+    
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of KES<span id="total">0</span>
+    </p><br>
+    <button id="submit">Book</button>
+
+    <script src="script.js">
+      document.getElementById(button).disabled = true;
+    </script>
+  </body>
+</html>
